@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DevOps Engineer - Portfolio</title>
+  <meta name="description"
+    content="Portfolio of a DevOps Engineer — infrastructure, automation, CI/CD, observability." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" href="https://img.icons8.com/?size=100&id=J3nZHWgT1e7m&format=png&color=000000">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <link rel="stylesheet" href="./Stylescheet/style.css">
+  <script src="./Javascript/script.js"></script>
+
+</head>
+
+<body>
+  <div class="wrap">
+
+    <header class="site-header">
+      <div class="header-container">
+        <a href="#hero" class="brand">
+          <div class="logo">GC</div>
+          <div class="brand-info">
+            <div class="brand-name">Gokulan C</div>
+            <div class="brand-sub">Linux | Infrastructure | CI/CD</div>
+          </div>
+        </a>
+
+        <input type="checkbox" id="nav-toggle">
+
+        <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </label>
+
+        <div class="nav-overlay"></div>
+
+        <nav class="nav-links">
+          <a class="nav-link" href="#hero">Home</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#approach">Approach</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero-card">
+          <div class="float-blob" aria-hidden="true"></div>
+          <div class="intro">
+            <h1>Hi — I'm <span
+                style="background:linear-gradient(90deg,#4ce0ff,#7b61ff);-webkit-background-clip:text;background-clip:text;color:transparent;">Gokulan
+                C</span>, a DevOps Engineer</h1>
+            <p>I design resilient infrastructure, ship reliable automation and scale systems for high availability.
+              I bridge product and platform with automation, observability and clean pipelines.</p>
+            <div class="cta">
+              <button class="btn" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">View
+                work</button>
+              <a class="btn ghost" href="#contact">Hire me</a>
+            </div>
+
+            <div style="height:16px"></div>
+            <div class="term" aria-live="polite">
+              <div class="line">$ git clone git@github.com:you/infra.git</div>
+              <div class="line">$ ./deploy.sh --env=prod --blue-green</div>
+              <div class="line">✔️ Deployment complete — 4 pods running • latency 52ms</div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="profile">
+          <div style="display:flex;gap:12px;align-items:center">
+            <div class="avatar">GC</div>
+            <div>
+              <h3>Gokulan C</h3>
+              <div style="font-size:13px;color:var(--muted)">DevOps Engineer</div>
+            </div>
+          </div>
+          <div style="height:12px"></div>
+          <div class="tags">
+            <div class="tag">Linux</div>
+            <div class="tag">Shell Script</div>
+            <div class="tag">Python</div>
+            <div class="tag">RHEL</div>
+            <div class="tag">Git</div>
+            <div class="tag">Github</div>
+            <div class="tag">Artifactory</div>
+            <div class="tag">Jenkins</div>
+            <div class="tag">Ansible</div>
+            <div class="tag">Docker</div>
+            <div class="tag">Grafana</div>
+            <div class="tag">Promethus</div>
+            <div class="tag">Loki</div>
+            <div class="tag">Azure Cloud</div>
+            <div class="tag">Azure storage</div>
+            <div class="tag">Azure Policies</div>
+            <div class="tag">Azure DevOps</div>
+          </div>
+
+          <div style="height:12px"></div>
+          <div style="display:flex;gap:8px">
+            <!-- <a class="nav-link" href="#contact">Email</a> -->
+          </div>
+        </aside>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="reveal">
+        <div class="card">
+          <h2>About me</h2>
+          <p style="color:var(--muted)">DevOps Engineer with 2.5 years of experience in automating infrastructure, CI/CD pipelines, containeriza
+tion, monitoring, and troubleshooting application environments. Skilled in implementing secure, scalable,
+and efficient solutions using modern DevOps tools and cloud technologies</p>
+          <ul style="color:var(--muted);margin-top:12px">
+            <li>Architected a resilient multi-region HA infrastructure with dynamic autoscaling and validated system fault tolerance through chaos testing</li>
+            <li>Built CI\CD pipelines using Git,jenkins and Ansible</li>
+            <li>Implemented end-to-end observability: metrics, traces, logs (Prometheus, Grafana, Loki)</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="reveal">
+        <h2>Skills</h2>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Cloud & Infrastructure</h3>
+            <div class="skill">
+              <div class="label"><span>Azure</span><span>90%</span></div>
+              <div class="bar"><i data-width="90"></i></div>
+            </div>
+            <div class="skill">
+              <div class="label"><span>Ansible</span><span>92%</span></div>
+              <div class="bar"><i data-width="92"></i></div>
+            </div>
+            <div class="skill">
+              <div class="label"><span>Networking</span><span>82%</span></div>
+              <div class="bar"><i data-width="82"></i></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Containers & Orchestration</h3>
+            <div class="skill">
+              <div class="label"><span>Kubernetes</span><span>94%</span></div>
+              <div class="bar"><i data-width="94"></i></div>
+            </div>
+            <div class="skill">
+              <div class="label"><span>Helm</span><span>85%</span></div>
+              <div class="bar"><i data-width="85"></i></div>
+            </div>
+            <div class="skill">
+              <div class="label"><span>Docker</span><span>90%</span></div>
+              <div class="bar"><i data-width="90"></i></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Pipelines & Observability</h3>
+            <div class="skill">
+              <div class="label"><span>CI/CD</span><span>95%</span></div>
+              <div class="bar"><i data-width="95"></i></div>
+            </div>
+            <div class="skill">
+              <div class="label"><span>Grafana</span><span>88%</span></div>
+              <div class="bar"><i data-width="88"></i></div>
+            </div>
+            <div class="skill">
+              <div class="label"><span>Logging / Tracing</span><span>86%</span></div>
+              <div class="bar"><i data-width="86"></i></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="approach" class="reveal">
+        <h2>My Approach</h2>
+        <div class="grid-3">
+          <div class="card">
+            <h2 class="card-title">Planning & Strategy</h2>
+            <p class="card-desc" style="color:var(--muted)">
+              We'll collaborate to map out your website's goals, target audience,
+              and key functionalities. We'll discuss things like site structure,
+              navigation, and content requirements.
+            </p>
+          </div>
+
+          <div class="card">
+            <h2 class="card-title">Development & Progress Update</h2>
+            <p class="card-desc" style="color:var(--muted)">
+              Once we agree on the plan, I cue my lofi playlist and dive into coding.
+              From initial sketches to polished code, I keep you updated every step of the way.
+            </p>
+          </div>
+
+          <div class="card">
+            <h2 class="card-title">Development & Launch</h2>
+            <p class="card-desc" style="color:var(--muted)">
+              This is where the magic happens! Based on the approved design,
+              I'll translate everything into functional code, building your website from the ground up.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="reveal">
+        <h2>Selected Projects</h2>
+        <div style="display:flex;flex-direction:column;gap:12px">
+
+          <article class="card project">
+            <div class="proj-thumb" aria-hidden="true"></div>
+            <div>
+              <h3 style="margin:0">CI/CD Automation</h3>
+              <p style="color:var(--muted);margin:6px 0 0">Designed an end-to-end CI/CD pipeline using Jenkins and JFrog
+                Artifactory for automated build, scan, and deployment workflows..</p>
+              <div style="margin-top:8px;color:var(--muted);font-size:13px">Tech: Git • Github • Jenkins • Artifactory •
+                Azure DevOps</div>
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="proj-thumb" style="background:linear-gradient(90deg,#ff7bd6,#7b61ff)" aria-hidden="true"></div>
+            <div>
+              <h3 style="margin:0">Monitoring System</h3>
+              <p style="color:var(--muted);margin:6px 0 0">Implemented centralized monitoring and log analysis using
+                Grafana,
+                Loki, Promtail, and Alertmanager for application observability.</p>
+              <div style="margin-top:8px;color:var(--muted);font-size:13px">Tech: Grafana • Prometheus • Loki • Promtail
+                • ELK </div>
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="proj-thumb" style="background:linear-gradient(90deg,#00d4ff,#36f)" aria-hidden="true"></div>
+            <div>
+              <h3 style="margin:0">Backstage Developer Portal</h3>
+              <p style="color:var(--muted);margin:6px 0 0">Customized Backstage frontend components and integrated Arti
+                factory APIs; containerized the portal using Docker.</p>
+              <div style="margin-top:8px;color:var(--muted);font-size:13px">Tech: Backstage • React JS • Express JS •
+                Docker
+              </div>
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="proj-thumb" style="background:linear-gradient(90deg,#00d4ff,#36f)" aria-hidden="true"></div>
+            <div>
+              <h3 style="margin:0">Artifactory Cloud Deployment</h3>
+              <p style="color:var(--muted);margin:6px 0 0"> Deployed JFrog Artifactory Cloud on Azure with HA setup,
+                storage
+                optimization, and Azure DevOps automation.</p>
+              <div style="margin-top:8px;color:var(--muted);font-size:13px">Tech: Backstage • Azure Cloud • Azure DevOps
+                • Networking
+              </div>
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="proj-thumb" style="background:linear-gradient(90deg,#00d4ff,#36f)" aria-hidden="true"></div>
+            <div>
+              <h3 style="margin:0">Server Security Automation</h3>
+              <p style="color:var(--muted);margin:6px 0 0"> Automated kernel security patching, OpenJDK upgrades, and log
+rotation using Shell scripts and Ansible.</p>
+              <div style="margin-top:8px;color:var(--muted);font-size:13px">Tech: Shell • Python • Jenkins • REST API • Ansible 
+                
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Experience / Timeline -->
+      <section class="reveal">
+        <h2>Experience</h2>
+        <div class="grid-3">
+          <div class="card">
+            <h3>DevOps Engineer</h3>
+            <div style="color:var(--muted);font-size:13px">Bosch Global Software Technologies — oct 2023 - Now</div>
+            <p style="color:var(--muted);margin-top:8px">DevOps Engineer with 2.5 years of experience in automating
+              infrastructure, CI/CD pipelines, containeriza
+              tion, monitoring, and troubleshooting application environments. Skilled in implementing secure, scalable,
+              and efficient solutions using modern DevOps tools and cloud technologies.</p>
+          </div>
+          <div class="card">
+            <h3>Graduate innovation Engineer</h3>
+            <div style="color:var(--muted);font-size:13px">Forge — 2022-2023</div>
+            <p style="color:var(--muted);margin-top:8px">ProtoSem is a 20
+              weeks Graduate Innovation Engineer Certification
+              offered as a comprehensive skills and competency
+              development program that embeds an innovation
+              centered approach to engineering education.</p>
+          </div>
+          <div class="card">
+            <h3>Freelancer</h3>
+            <div style="color:var(--muted);font-size:13px"> Jan 2023 - Sep 2023</div>
+            <p style="color:var(--muted);margin-top:8px">Automated deployments, containerized services, and implemented
+              cost-saving measures across infra.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="reveal">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-wrapper">
+          <div class="contact-sidebar">
+            <h3 class="terminal-text">Let's build something resilient.</h3>
+            <p class="contact-desc">Currently open for infrastructure consulting or full-time opportunities.</p>
+
+            <div class="action-cards">
+              <a href="mailto:c.Gokulan.profs@gmail.com" class="action-card">
+                <div class="icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="card-content">
+                  <span class="card-label">Email Me</span>
+                  <span class="card-value">c.Gokulan.profs@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="./Project/Resume/gokulan_resume.pdf" target="_blank" class="action-card">
+                <div class="icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                  </svg>
+                </div>
+                <div class="card-content">
+                  <span class="card-label">Documentation</span>
+                  <span class="card-value">Download Resume</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <form id="contact-form" class="glass-form">
+            <div class="input-group">
+              <input type="text" id="name" required placeholder=" " />
+              <label for="name">Full Name</label>
+              <div class="input-underline"></div>
+            </div>
+
+            <div class="input-group">
+              <input type="email" id="email" required placeholder=" " />
+              <label for="email">Email Address</label>
+              <div class="input-underline"></div>
+            </div>
+
+            <div class="input-group">
+              <input type="text" id="subject" required placeholder=" " />
+              <label for="subject">Subject</label>
+              <div class="input-underline"></div>
+            </div>
+
+            <div class="input-group">
+              <textarea id="message" required placeholder=" " rows="4"></textarea>
+              <label for="message">Your Message</label>
+              <div class="input-underline"></div>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              <span class="btn-text">Send Message</span>
+              <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <footer>
+        <div style="display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap">
+          <div>© <strong> Design and Development by </strong>— Gokulan C</div>
+          <div style="color:var(--muted)">DevOps Engineer</div>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+
+  <!-- Load EmailJS SDK -->
+
+</body>
+
+</html>
